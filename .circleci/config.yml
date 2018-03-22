@@ -19,7 +19,7 @@ jobs:
           name: Print conda-build environment variables
           command: |
             echo "CONDA_PY=${CONDA_PY}"
-      - run:
+      #- run:
           # Run, test and (if we have a BINSTAR_TOKEN) upload the distributions.
           #command: ./.circleci/run_docker_build.sh
       - run:
@@ -59,7 +59,7 @@ jobs:
           name: Print conda-build environment variables
           command: |
             echo "CONDA_PY=${CONDA_PY}"
-      - run:
+      #- run:
           # Run, test and (if we have a BINSTAR_TOKEN) upload the distributions.
           #command: ./.circleci/run_docker_build.sh
       - run:
@@ -99,7 +99,7 @@ jobs:
           name: Print conda-build environment variables
           command: |
             echo "CONDA_PY=${CONDA_PY}"
-      - run:
+      #- run:
           # Run, test and (if we have a BINSTAR_TOKEN) upload the distributions.
           #command: ./.circleci/run_docker_build.sh
       - run:
