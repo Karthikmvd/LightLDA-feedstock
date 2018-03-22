@@ -55,7 +55,6 @@ echo "$config" > ~/.condarc
 export PATH=$PATH:/opt/conda/bin
 # A lock sometimes occurs with incomplete builds. The lock file is stored in build_artifacts.
 conda clean --lock
-
 #conda install --yes --quiet conda-forge-build-setup
 #source run_conda_forge_build_setup
 
