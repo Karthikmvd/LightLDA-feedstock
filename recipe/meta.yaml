@@ -9,9 +9,6 @@ source:
 
 build:
   number: 0
- # script:  git submodule update --init --recursive
- # script:  cp /home/rhel/karthi/lightlda/light_lda_fix.tgz .
- # script:  tar -xvzf light_lda_fix.tgz
   script:  sh build.sh
 
 requirements:
@@ -28,9 +25,6 @@ requirements:
 
 about:
   home: https://github.com/Microsoft/LightLDA
-  license: MIT
-  license_family: MIT
-  license_file: LICENSE
   summary: 'LightLDA is a gradient boosting framework that uses tree based learning algorithms.'
 
   description: |
