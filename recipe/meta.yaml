@@ -1,0 +1,44 @@
+{% set name = "lightlda" %}
+{% set version = "1.0" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+source:
+  git_rev: 
+  git_url: https://github.com/Karthikmvd/LightLDA.git
+
+build:
+  number: 0
+ # script:  git submodule update --init --recursive
+ # script:  cp /home/rhel/karthi/lightlda/light_lda_fix.tgz .
+ # script:  tar -xvzf light_lda_fix.tgz
+  script:  sh build.sh
+
+requirements:
+  build:
+    - python
+ 
+  run:
+    - python
+   
+
+#test:
+#  imports:
+#    - lightlda
+
+about:
+  home: https://github.com/Microsoft/LightLDA
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: 'LightLDA is a gradient boosting framework that uses tree based learning algorithms.'
+
+  description: |
+    A fast, distributed, high performance gradient boosting (GBDT, GBRT, GBM or MART) framework based on decision tree algorithms, used for ranking, classification and many other machine learning tasks.
+
+  dev_url: https://github.com/Microsoft/LightLDA
+
+extra:
+  recipe-maintainers:
+    - none
