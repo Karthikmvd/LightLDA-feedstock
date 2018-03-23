@@ -14,9 +14,11 @@ build:
 requirements:
   build:
     - python
+    - wget
  
   run:
     - python
+    - wget
    
 
 #test:
