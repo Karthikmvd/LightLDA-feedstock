@@ -1,0 +1,12 @@
+--- config/config.guess	2018-03-23 17:43:09.506213280 +0000
++++ config/config.guess-mod	2018-03-23 17:33:13.285167099 +0000
+@@ -913,6 +913,9 @@
+     hexagon:Linux:*:*)
+ 	echo ${UNAME_MACHINE}-unknown-linux-gnu
+ 	exit ;;
++    ppc64le:Linux:*:*)
++        echo ${UNAME_MACHINE}-unknown-linux-gnu
++        exit ;;
+     i*86:Linux:*:*)
+ 	LIBC=gnu
+ 	eval $set_cc_for_build

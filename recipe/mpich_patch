@@ -1,0 +1,61 @@
+--- a/confdb/config.guess	2013-04-24 20:40:42.000000000 +0530
++++ b/confdb/config.guess	2018-03-20 13:39:44.017799979 +0530
+@@ -920,6 +920,9 @@
+     hexagon:Linux:*:*)
+ 	echo ${UNAME_MACHINE}-unknown-linux-gnu
+ 	exit ;;
++    ppc64le:Linux:*:*)
++	echo ${UNAME_MACHINE}-unknown-linux-gnu
++	exit ;;
+     i*86:Linux:*:*)
+ 	LIBC=gnu
+ 	eval $set_cc_for_build
+
+--- a/src/mpl/confdb/config.guess	2013-04-24 20:40:42.000000000 +0530
++++ b/src/mpl/confdb/config.guess	2018-03-20 13:39:44.017799979 +0530
+@@ -920,6 +920,9 @@
+     hexagon:Linux:*:*)
+ 	echo ${UNAME_MACHINE}-unknown-linux-gnu
+ 	exit ;;
++    ppc64le:Linux:*:*)
++	echo ${UNAME_MACHINE}-unknown-linux-gnu
++	exit ;;
+     i*86:Linux:*:*)
+ 	LIBC=gnu
+ 	eval $set_cc_for_build
+--- a/src/openpa/confdb/config.guess	2013-04-24 20:40:42.000000000 +0530
++++ b/src/openpa/confdb/config.guess	2018-03-20 13:39:44.017799979 +0530
+@@ -920,6 +920,9 @@
+     hexagon:Linux:*:*)
+ 	echo ${UNAME_MACHINE}-unknown-linux-gnu
+ 	exit ;;
++    ppc64le:Linux:*:*)
++	echo ${UNAME_MACHINE}-unknown-linux-gnu
++	exit ;;
+     i*86:Linux:*:*)
+ 	LIBC=gnu
+ 	eval $set_cc_for_build
+--- a/src/mpi/romio/confdb/config.guess	2013-04-24 20:40:42.000000000 +0530
++++ b/src/mpi/romio/confdb/config.guess	2018-03-20 13:39:44.017799979 +0530
+@@ -920,6 +920,9 @@
+     hexagon:Linux:*:*)
+ 	echo ${UNAME_MACHINE}-unknown-linux-gnu
+ 	exit ;;
++    ppc64le:Linux:*:*)
++	echo ${UNAME_MACHINE}-unknown-linux-gnu
++	exit ;;
+     i*86:Linux:*:*)
+ 	LIBC=gnu
+ 	eval $set_cc_for_build
+--- a/src/pm/hydra/confdb/config.guess	2013-04-24 20:40:42.000000000 +0530
++++ b/src/pm/hydra/confdb/config.guess	2018-03-20 13:39:44.017799979 +0530
+@@ -920,6 +920,9 @@
+     hexagon:Linux:*:*)
+ 	echo ${UNAME_MACHINE}-unknown-linux-gnu
+ 	exit ;;
++    ppc64le:Linux:*:*)
++	echo ${UNAME_MACHINE}-unknown-linux-gnu
++	exit ;;
+     i*86:Linux:*:*)
+ 	LIBC=gnu
+ 	eval $set_cc_for_build

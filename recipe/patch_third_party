@@ -1,0 +1,21 @@
+diff --git a/multiverso/third_party/install.sh b/third_party/install.sh
+index 084eaf3..b82961c 100755
+--- a/multiverso/third_party/install.sh
++++ b/multiverso/third_party/install.sh
+@@ -14,6 +14,7 @@ tar -zxf zeromq-4.1.3.tar.gz
+ # Make sure that libtool, pkg-config, build-essential, autoconf and automake
+ # are installed.
+ cd $ZMQ_DIR
++patch -p0<${RECIPE_DIR}/patch_zeromq
+ ./configure --prefix=$THIRD_PARTY_DIR --without-libsodium
+ make -j4
+ make install -j4
+@@ -30,6 +31,7 @@ tar -zxf mpich-3.0.4.tar.gz
+ 
+ # Build MPICH2
+ cd $MPI_DIR
++git apply ${RECIPE_DIR}/mpich_patch
+ ./configure --prefix=$THIRD_PARTY_DIR --disable-fc --disable-f77
+ make -j4
+ make install -j4
+
